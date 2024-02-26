@@ -11,7 +11,8 @@ def click():
     url = str(inputField.get())
     result = short.tinyurl.short(url)
     window.clipboard_append(result)
-    tkinter.messagebox.showinfo(title="Shorted Url is Copied !", message=result)
+    time.sleep(2)
+    tkinter.messagebox.showinfo(title="Shorted Url is Copied !", message="Shorted Url is Copy to Clipboard ! ")
 
 
 window.config(bg="black")
